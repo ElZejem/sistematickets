@@ -17,6 +17,9 @@
   <header class="bg-primary text-white py-3 mb-4">
     <div class="container">
       <h1 class="h3">Sistema de Tickets — Unidad 3 (Programación del lado del cliente)</h1>
+	  <p class="mt-2">
+      Aplicación desarrollada como práctica de validación, manejo de eventos y almacenamiento local.
+    </p>
       <p id="urgentCounter" class="mb-0">Comentarios urgentes: <span id="urgentCount">0</span></p>
     </div>
   </header>
@@ -85,7 +88,7 @@
 
     <section>
       <h2 class="h5 mb-3">Lista de Tickets</h2>
-      <div v-if="filteredMessages.length === 0" class="text-muted">No hay Ticketss.</div>
+      <div v-if="filteredMessages.length === 0" class="text-muted">No hay Tickets.</div>
 
       <div class="list-group">
         <div v-for="(m, idx) in filteredMessages" :key="m.id"
